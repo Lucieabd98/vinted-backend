@@ -97,7 +97,7 @@ router.get("/offers", async (req, res) => {
       sortKey.product_price = req.query.sort.replace("price-", "");
     }
 
-    let limitKey = 5;
+    let limitKey = 15;
 
     let skipKey = 0;
 
