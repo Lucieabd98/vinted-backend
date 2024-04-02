@@ -9,8 +9,6 @@ const User = require("../models/User");
 const Offer = require("../models/Offer");
 const isAuthenticated = require("../middlewares/isAuthenticated");
 
-const stripe = require("stripe")(process.env.STRIPE_API);
-
 // création d'une route qui permettra de poster une annonce.
 // chaque annonce doit avoir une référence vers l'utilisateur qui la poste
 // l'utilisateur doit etre authentifié pour pouvoir poster une annonce

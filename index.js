@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 mongoose.connect(process.env.MONGODB_URI);
+// const stripe = require("stripe")(process.env.STRIPE_API);
 
 const cloudinary = require("cloudinary").v2; // cloudinary 🌥️
 
