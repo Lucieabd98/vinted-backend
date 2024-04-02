@@ -23,6 +23,10 @@ app.use(signUpRoutes);
 const offerRoutes = require("./routes/offer");
 app.use(offerRoutes);
 
+// Payment routes
+const paymentRoutes = require("./routes/payment");
+app.use(paymentRoutes);
+
 // NE RIEN METTRE EN DESSOUS 🚫
 app.all("*", (req, res) => {
   res.status(404).json({ message: "This route does not exist" });

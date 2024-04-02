@@ -8,7 +8,6 @@ const convertToBase64 = require("../utils/convertToBase64");
 const User = require("../models/User");
 const Offer = require("../models/Offer");
 const isAuthenticated = require("../middlewares/isAuthenticated");
-const stripe = require("stripe")(process.env.STRIPE_API);
 
 // création d'une route qui permettra de poster une annonce.
 // chaque annonce doit avoir une référence vers l'utilisateur qui la poste
