@@ -15,7 +15,6 @@ router.post("/payment", async (req, res) => {
       description: req.body.description,
     });
 
-    res.json({ message: req.body });
     // On renvoie les informations de l'intention de paiement au client
     res.json(paymentIntent);
   } catch (error) {
