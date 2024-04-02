@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const router = express.Router();
-const stripe = require("stripe")(process.env.STRIPE_API);
+const stripe = require("stripe")(process.env.STRIPE_API_SECRET);
 
 router.post("/payment", async (req, res) => {
   try {
